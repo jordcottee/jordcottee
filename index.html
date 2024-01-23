@@ -16,15 +16,15 @@
 				<br>
 				<h2>Please enter the secret code</h2>
 				<input type="text" id="codeInput" placeholder="Enter code" style="width: 250px; margin: 0 auto;"> <!-- Centered and adjusted the width -->
-<br>				
-<button onclick="checkCode()">Submit</button>
+				<br>				
+				<button onclick="checkCode()" style="width: 250px;">Submit</button> <!-- Adjusted the width of the button -->
 
 				<script>
 					function checkCode() {
 						var enteredCode = document.getElementById("codeInput").value;
 
-						// Use "botley2024" as the correct code
-						var correctCode = "botley2024";
+						// Use "Botley2024" as the correct code
+						var correctCode = "Botley2024";
 
 						if (enteredCode === correctCode) {
 							window.location.href = "wedding.html"; // Redirect to success page
