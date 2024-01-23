@@ -15,11 +15,18 @@
 			<header class="major">
 				<br>
 				<h2>Please enter the secret code</h2>
-				<input type="text" id="codeInput" placeholder="Enter code" style="width: 250px; margin: 0 auto;"> <!-- Centered and adjusted the width -->
+				<input type="text" id="codeInput" placeholder="Enter code" style="width: 250px; margin: 0 auto;" onkeyup="handleKeyPress(event)">
 				<br>				
-				<button onclick="checkCode()" style="width: 250px;">Submit</button> <!-- Adjusted the width of the button -->
+				<button onclick="checkCode()" style="width: 250px;">Submit</button>
 
 				<script>
+					function handleKeyPress(event) {
+						if (event.keyCode === 13) {
+							// 13 is the keycode for the "Enter" key
+							checkCode();
+						}
+					}
+
 					function checkCode() {
 						var enteredCode = document.getElementById("codeInput").value;
 
