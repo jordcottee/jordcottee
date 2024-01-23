@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<!--
+	Jordan & Emily -->
+<html>
+	<head>
+		<title>Jordan & Emily are getting married</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<section id="header">
+			<header class="major">
+				<br>
+				<h2>Please enter the secret code</h2>
+				<input type="text" id="codeInput" placeholder="Enter code" style="width: 250px; margin: 0 auto;"> <!-- Centered and adjusted the width -->
+<br>				
+<button onclick="checkCode()">Submit</button>
+
+				<script>
+					function checkCode() {
+						var enteredCode = document.getElementById("codeInput").value;
+
+						// Use "botley2024" as the correct code
+						var correctCode = "botley2024";
+
+						if (enteredCode === correctCode) {
+							window.location.href = "wedding.html"; // Redirect to success page
+						} else {
+							alert("Incorrect code. Please try again.");
+						}
+					}
+				</script>
+			</header>
+		</section>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
